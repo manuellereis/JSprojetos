@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+:root{
+    --font: Arial, Helvetica, sans-serif;
+    --body-bg-color: #1fb4be6b;
+    --form-bg-color: #ffffff;
+    --strong-color: #1fb3beec;
+    --button-bg-color1: #1fb4be6b;
+    --button-bg-color2: #0651576b;
+}
+*{
+    font-family: var(--font);
+}
+body{
+    background-color: var(--body-bg-color);
+}
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+form{
+    padding: 3em;
+    background-color: var(--form-bg-color);
+    margin: auto;
+    max-width: 24em;
+    border-radius: 0.5em;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+label{
+    padding: 0.5em;
+    font-weight: bold;
+}
+input{
+    padding: 0.8em;
+    width: 20em;
+    border-radius: 0.8em;
+    border: 0.1em solid rgb(175, 175, 175);
+}
+strong{
+    color: var(--strong-color);
+}
+p>strong{
+    font-size: 1.5m;
+}
+button{
+    padding: 0.8em;
+    width: 22em;
+    font-weight: bold;
+    background-color: var(--button-bg-color1);
+    border: none;
+    border-radius: 0.8em;
+    margin-top: 1em;
+}
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    background-color: var(--button-bg-color2);
+    cursor: wait;
+}
+#resultado{
+    height: 1em;
+    padding: 0.8em;
+    display: none;
+}
+
