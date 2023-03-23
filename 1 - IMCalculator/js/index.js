@@ -37,7 +37,7 @@ const ImcCalculator = () => {
             resultado.innerHTML = `${text.obesidade3}`;
         };
 
-        if(!peso && !altura){
+        if(peso == false && altura == false){
             resultado.innerHTML = `${text.erro1}`;
         }else if(!peso){
             resultado.innerHTML = `${text.erro2}`;
