@@ -70,4 +70,14 @@ button:active{
     padding: 0.8em;
     display: none;
 }
-
+aside{
+    width: 1em;
+    height: 1em;
+    background-color: var(--form-bg-color);
+    border: 0.1em solid black;
+    border-radius: 50%;
+    
+}
+tabela{
+    padding: 0.5em;
+}
