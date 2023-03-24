@@ -20,7 +20,8 @@ const ImcCalculator = () => {
             obesidade3:`<strong style="color:red;>ATENÇÃO!<br>Seu IMC é de: ${calculoIMC}.<br>*Obesidade grau III*</strong>`,
             erro1: `<strong style="color:red;">Erro!<br>Você precisa preencher os campos.</strong>`,
             erro2: `<strong style="color:red;">Erro!<br>Você precisa preencher o campo de peso.</strong>`,
-            erro3: `<strong style="color:red;">Erro!<br>Você precisa preencher o campo de altura.</strong>`
+            erro3: `<strong style="color:red;">Erro!<br>Você precisa preencher o campo de altura.</strong>`,
+            erro4: `<strong style="color:red;">Erro!<br>Não utilize vírgula!.</strong>`
         };
 
        if(calculoIMC <= 18.5){
@@ -44,9 +45,7 @@ const ImcCalculator = () => {
         }else if(!altura){
             resultado.innerHTML = `${text.erro3}`
         }
-        
+          
     });
-    
-
 };
 ImcCalculator();
